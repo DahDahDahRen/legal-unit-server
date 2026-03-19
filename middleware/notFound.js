@@ -1,0 +1,7 @@
+const notFound = (req, res, next) => {
+  res.status(202).json({
+    msg: "Route does not exist!",
+  });
+};
+
+module.exports = notFound;
