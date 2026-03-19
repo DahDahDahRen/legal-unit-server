@@ -21,6 +21,8 @@ app.use("/legal/api/v1", cnoacRouter);
 app.use(notFound);
 app.use(errorHandlerMiddleware);
 
+const PORT = process.env.SERVER_PORT || 8000;
+
 // Start server
 const start = async () => {
   try {
