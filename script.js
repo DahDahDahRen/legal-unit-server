@@ -30,11 +30,11 @@ const start = async () => {
     await connectDB(process.env.MONGO_URI);
 
     // Start the server
-    app.listen(process.env.SERVER_PORT, () => {
+    app.listen(PORT, () => {
       console.log(`
 
 
-        http://localhost:${process.env.SERVER_PORT}
+        http://localhost:${PORT}
 
         Welcome to SDO Tacloban City Legal Unit Online Service.
         Mainted by: JAN JOSHUA I. MACANIP /LEGAL ASSISTANT - I
